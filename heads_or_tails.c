@@ -5,7 +5,11 @@
 int main(void) {
     int heads = 0;
     int tails = 0;
-
+    char name[100];
+    
+    printf("Who are you?\n> ");
+    scanf("%99s", name);
+    printf("Hello, %s!\n", name);
     printf("Tossing a coin...\n");
 
     srand((unsigned)time(NULL));
